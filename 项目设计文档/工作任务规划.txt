@@ -1,0 +1,21 @@
+
+今日学习：
+创建表语句
+CREATE TABLE if not exists `autobiographyTable`(
+	`autobiographyId` VARCHAR(100) not null,
+	`parentAutobiographyId` varchar(100),
+	`title` VARCHAR(200),
+	`content` varchar(2000),
+	`createdByUserId` varchar(100),
+	`createdDate` varchar(100),
+	`orderNum` int,
+	`password` varchar(100),
+	primary key (`autobiographyId`)
+)
+
+今日问题：
+
+如何二级便利
+	二级便利根据点击一级标题。
+	问题：二级显示在当前点击的一级下面，而不是全部一级都显示
+	解决思路：采用具名插槽方式，获取点击的当前数据。
